@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/fullpage.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Portfolio | Job Nabong</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a onclick="fullpage_api.moveTo(1)" class="gen-link">Home</a>
+      <a onclick="fullpage_api.moveTo(2)" id="about-link">About</a>
+      <a onclick="fullpage_api.moveTo(3)" id="port-link">Portfolio</a>
+      <a onclick="fullpage_api.moveTo(4)" id="cont-link">Contact</a>
+      <a href="https://firstfloorkids-job.blogspot.com/" target="_blank" class="gen-link">Blog</a>
+    </nav>
+  </header>
+  <div id="fullpage">
+    <!--Intro-->
+    <div class="section" id="intro">
+      <div class="big-text center">
+        <h1 id="app"></h1>
+      </div>
+    </div>
+    <!--About Me-->
+    <div class="section" id="about">
+      <div class="big-text center">
+        <h1>I am a web designer.</h1>
+      </div>
+      <div class="port-container">
+        <div class="port-content left about-text">
+          <p class="normal-text">
+            Hi! My name is Job Nabong and I am a senior at Information Technology High School. <br>
+            Over the course of 3 years I have learned much about Web Design and all of its components. <br>
+            I have learned various topics such as HTML, CSS, JavaScript, Visual Design, and many more. <br>
+            All this learning has culminated in me become a proficient web designer. <br> <br>
+
+            Along with Web Design, I have also participated in many opportunites thanks to Work Based Learning. <br>
+            I had the chance to participate in an internship opportunity, meet industry professionals, and improve <br> my own skills.
+            Thanks to WBL, I am a completely different person in 2019 than in 2015. I am more aware <br> of my skills and what to consider for my future. <br>
+          </p>
+        </div>
+        <div class="port-content right">
+          <img src="img/me.png" alt="Me" width="300px">
+        </div>
+      </div>
+    </div>
+    <!--Portfolio-->
+    <div class="section" id="portfolio">
+      <div class="big-text slide port-text">
+        <h1>Click one of the buttons to view my works.</h1>
+        <div class="port-row">
+          <a onclick="fullpage_api.moveTo(3,1)">Visual Design</a>
+          <a onclick="fullpage_api.moveTo(3,2)">Digital Design</a>
+          <a onclick="fullpage_api.moveTo(3,3)">Web Client Programming</a>
+        </div>
+        <!--<h1>Press ◄ or ► to view my works.</h1>-->
+      </div>
+      <div class="slide big-text port-text">
+        <!--Visual Design-->
+        <div class="port-row">
+          <a onclick="fullpage_api.moveTo(3,1)" class="disabled">Visual Design</a>
+          <a onclick="fullpage_api.moveTo(3,2)">Digital Design</a>
+          <a onclick="fullpage_api.moveTo(3,3)">Web Client Programming</a>
+        </div>
+        <h1>Visual Design</h1>
+        <div class="port-container">
+          <div class="small-text port-content">
+            <p class="port-desc">This is Visual Design, we used Photoshop and InDesign<br /> to create and edit images.</p>
+            <p class="port-desc">Since it was my first year, I took it pretty slow.<br> I got to meet a lot of people and make new friends.</p>
+            <p><a href="#vd" rel="modal:open" class="modal-btn">Portfolio</a></p>
+          </div>
+          <div class="port-content">
+            <img src="img/ps.png" alt="#" height="250px">
+          </div>
+        </div>
+      </div>
+      <div class="slide big-text port-text">
+        <!--Digital Design-->
+        <div class="port-row">
+          <a onclick="fullpage_api.moveTo(3,1)">Visual Design</a>
+          <a onclick="fullpage_api.moveTo(3,2)" class="disabled">Digital Design</a>
+          <a onclick="fullpage_api.moveTo(3,3)">Web Client Programming</a>
+        </div>
+        <h1>Digital Design</h1>
+        <div class="port-container">
+          <div class="small-text port-content">
+            <p class="port-desc">This is Digital Design, we used Adobe Dreamweaver<br /> to create basic HTML pages.</p>
+            <p class="port-desc">I found this to be very enjoyable. I got to learn how to create<br> webpages and design my first portfolio.</p>
+            <p><a href="#dd" rel="modal:open" class="modal-btn">Labs & Projects</a></p>
+          </div>
+          <div class="port-content">
+            <img src="img/dw.png" alt="#" height="250px">
+          </div>
+        </div>
+      </div>
+      <div class="slide big-text port-text">
+        <!--Web Client Programming-->
+        <div class="port-row">
+          <a onclick="fullpage_api.moveTo(3,1)">Visual Design</a>
+          <a onclick="fullpage_api.moveTo(3,2)">Digital Design</a>
+          <a onclick="fullpage_api.moveTo(3,3)" class="disabled">Web Client Programming</a>
+        </div>
+        <h1>Web Client Programming</h1>
+        <div class="port-container">
+          <div class="small-text port-content">
+            <p class="port-desc">This is Web Client Programming, we learned advanced <br> HTML/CSS techniques and jQuery.</p>
+            <p class="port-desc">I stopped using Dreamweaver and started using Atom instead. <br> I redesigned my old portfolio into my current one.</p>
+            <p><a href="#wcp" rel="modal:open" class="modal-btn">Labs & Projects</a></p>
+          </div>
+          <div class="port-content">
+            <img src="img/atom.png" alt="#" height="250px">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Contact-->
+    <div class="section" id="contact">
+      <div class="big-text center">
+        <h1>Contact me.</h1>
+      </div>
+      <div id="form">
+        <div id="message-area">
+          <form class="message" action="mailto:jobnathaniel@gmail.com" method="post" enctype="text/plain">
+            <div class="msg-row">
+              <input type="text" name="name" placeholder="Name">
+              <input type="text" name="email" placeholder="Email">
+            </div>
+            <div class="msg-row">
+              <input type="text" name="body" id="body-text" placeholder="Message" size="50"><br>
+            </div>
+            <button type="button" name="button" id="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <div class="center fa-links">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+        <a href="https://twitter.com/spedicuss" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/jnen/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+      </div>
+    </div>
+  </div>
+  <!--VD Modal-->
+  <div id="vd" class="modal">
+    <div class="mod-row">
+      <a href="VD.pdf" target="_blank"><img src="img\vd-collage.png" alt="#" height="250px"></a>
+    </div>
+  </div>
+  <!--DD Modal-->
+  <div id="dd" class="modal">
+    <h3 class="modal-header">Labs</h3>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_1/Lab1_JobN_DD17.html" target="_blank">Lab 1</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_2/Lab2_JobN_DD17.html" target="_blank">Lab 2</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_3/Lab3_JobN_DD17.html" target="_blank">Lab 3</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_4/Lab4_JobN_DD17.html" target="_blank">Lab 4</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_5/Lab5_JobN_DD17.html" target="_blank">Lab 5</a>
+    </div>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_6/Lab6_JobN_DD17.html" target="_blank">Lab 6</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_7/Lab7_JobN.html" target="_blank">Lab 7</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_8/Lab8_JobN.html" target="_blank">Lab 8</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/" target="_blank">Lab 9</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_10/Lab10_JobN.html" target="_blank">Lab 10</a>
+    </div>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_11/Lab11_JobN.html" target="_blank">Lab 11</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_12/Lab12_JobN.html" target="_blank">Lab 12</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_13/Lab13_JobN.html" target="_blank">Lab 13</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_14/Lab14.html" target="_blank">Lab 14</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_15/Lab15.html" target="_blank">Lab 15</a>
+    </div>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_16/Lab16.html" target="_blank">Lab 16</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_17/Lab17.html" target="_blank">Lab 17</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_18/Lab18.html" target="_blank">Lab 18</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_19/Lab19.html" target="_blank">Lab 19</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_20/Lab20.html" target="_blank">Lab 20</a>
+    </div><br>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/DD/Labs/Lab_21/Lab21.html" target="_blank">Lab 21</a>
+    </div>
+    <hr>
+    <h3 class="modal-header">Projects</h3>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/DD/Projects/PR1/PR1_JobN.html" target="_blank">Project 1</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Projects/PR2/PR2.html" target="_blank">Project 2</a>
+      <a href="http://techteach.us/Web2019/Njob/DD/Projects/PR3/index.html" target="_blank">Project 3</a>
+    </div>
+  </div>
+  <!--WCP Modal-->
+  <div id="wcp" class="modal">
+    <h3 class="modal-header">Labs</h3>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab20/" class="disabled" target="_blank">Lab 1</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab_2/Lab2.html" target="_blank">Lab 2</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab_3/Lab3.html" target="_blank">Lab 3</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab4/Lab4.html" target="_blank">Lab 4</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab5/Lab5.html" target="_blank">Lab 5</a>
+    </div>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab6/Lab6.html" target="_blank">Lab 6</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab7/Lab7.html" target="_blank">Lab 7</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab8/" target="_blank">Lab 8</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab9/" target="_blank">Lab 9</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab10/" target="_blank">Lab 10</a>
+    </div>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab11/ajax_demo.html" target="_blank">Lab 11</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab12/json_starter.html" target="_blank">Lab 12</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab13/" target="_blank">Lab 13</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab14/" target="_blank">Lab 14</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab15/" target="_blank">Lab 15</a>
+    </div>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab16/" target="_blank">Lab 16</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab17/" target="_blank">Lab 17</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab18/" target="_blank">Lab 18</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab19/" target="_blank">Lab 19</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab20/" target="_blank">Lab 20</a>
+    </div>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab21/" target="_blank">Lab 21</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab22/" target="_blank">Lab 22</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab23/" target="_blank">Lab 23</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab24/" target="_blank">Lab 24</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab25/" target="_blank">Lab 25</a>
+    </div>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab26/" target="_blank">Lab 26</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab27/" class="disabled" target="_blank">Lab 27</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab28/" target="_blank">Lab 28</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab29/" target="_blank">Lab 29</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab30/" target="_blank">Lab 30</a>
+    </div>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab31/" target="_blank">Lab 31</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab32/" target="_blank">Lab 32</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab33/" target="_blank">Lab 33</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab34/" target="_blank">Lab 34</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab35/" target="_blank">Lab 35</a>
+    </div>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab36/" target="_blank">Lab 36</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab37/" target="_blank">Lab 37</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab38/" target="_blank">Lab 38</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab39/" target="_blank">Lab 39</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab40/" target="_blank">Lab 40</a>
+    </div>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab41/" target="_blank">Lab 41</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab42/" target="_blank">Lab 42</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab43/" target="_blank">Lab 43</a>
+    </div>
+    <hr>
+    <h3 class="modal-header">Projects</h3>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Vbrian/WCP/Projects/Project_1/Prj1_BrianV_WCP2019.html" target="_blank">Project 1</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Projects/sharkTank/scion/scion.html" target="_blank">Project 2</a>
+      <a href="https://spedicus.github.io/css/final/" target="_blank">Project 3</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Projects/podcast/" target="_blank">Project 4</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Projects/creditscore/" target="_blank">Project 5</a>
+    </div>
+    <div class="mod-row">
+      <a href="http://techteach.us/Web2019/Njob/WCP/Projects/questionnaire/" class="disabled" target="_blank">Project 6</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab20/" class="disabled" target="_blank">Project 7</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab20/" class="disabled" target="_blank">Project 8</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Labs/Lab20/" class="disabled" target="_blank">Project 9</a>
+      <a href="http://techteach.us/Web2019/Njob/WCP/Projects/spring/" target="_blank">Project 10</a>
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/fullpage.extensions.min.js" charset="utf-8"></script>
+<script src="js/fullpage.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+<script type="text/javascript">
+  new fullpage('#fullpage', {
+  //fullpage.js
+    //options here
+    autoScrolling: true,
+    scrollHorizontally: true,
+    controlArrows: false,
+    sectionsColor: ['black','#FF3333','#00cc66','#4286f4'],
+    });
+
+    //methods
+    fullpage_api.setAllowScrolling(true);
+  //modal.js
+    $('a.modal-btn').click(function(event) {
+    $(this).modal({
+        fadeDuration: 150
+      });
+      return false;
+    });
+    $("#custom-close").modal({
+     closeClass: 'icon-remove',
+     closeText: '!'
+    });
+  //typewriter.js
+  var app = document.getElementById('app');
+
+  var typewriter = new Typewriter(app, {
+    strings: ["Hello, my name is Job.","I don't have much to say...","So I'll keep it short.","Scroll ▼."],
+    loop: true,
+    autoStart: true,
+  });
+</script>
+</html>
